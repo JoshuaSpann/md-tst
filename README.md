@@ -23,16 +23,16 @@
 
 <script>
 let get = (filename)=> {
-	let result = null
-	let xhr = new XMLHttpRequest()
-	xhr.open('GET', filename, false)
-	xhr.send()
+	let result = null;
+	let xhr = new XMLHttpRequest();
+	xhr.open('GET', filename, false);
+	xhr.send();
 	if (xhr.status == 200) {
-		result = xhr.responseText
+		result = xhr.responseText;
 	}
-	return result
+	return result;
 }
-let content = document.querySelector('#content')
-let markdown = get('tst.md')
-content.innerHTML = markdown
+let content = document.querySelector('#content');
+let markdown = get('tst.md');
+content.innerHTML = markdown;
 </script>
